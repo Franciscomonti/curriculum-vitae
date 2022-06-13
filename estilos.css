@@ -78,6 +78,14 @@ body .bloque-main .bloque-descripcion .bloque-descripcion-txt p {
   font-size: 20px;
 }
 
+body .bloque-main .bloque-descripcion .bloque-descripcion-txt a {
+  position: absolute;
+  bottom: 50px;
+  right: 50PX;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
 body .bloque-main .titulo-main {
   z-index: 10;
   text-align: center;
@@ -138,6 +146,10 @@ body .bloque-main .bloque-conocimiento .cards-conocimiento:hover img {
           filter: none;
 }
 
+body .bloque-main .bloque-conocimiento .cards-conocimiento:hover a {
+  background-color: rgba(93, 34, 105, 0.877);
+}
+
 body .bloque-main .bloque-conocimiento .cards-conocimiento img {
   width: 150px;
   -o-object-fit: cover;
@@ -154,10 +166,9 @@ body .bloque-main .bloque-conocimiento .cards-conocimiento h3 {
 body .bloque-main .bloque-conocimiento .cards-conocimiento a {
   padding: 2px 15px;
   margin: 10px auto 20px;
-  border: 1px black solid;
   text-decoration: none;
   color: white;
-  background-color: black;
+  background-color: rgba(93, 34, 105, 0.548);
   border-radius: 7px;
 }
 
@@ -183,9 +194,9 @@ body .bloque-main .bloque-cursos .cards-cursos {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   border-radius: 7px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -240,5 +251,78 @@ body .bloque-piepagina .bloque-piepagina-datos {
 body .bloque-piepagina .bloque-piepagina-datos li {
   list-style: none;
   padding: 5px;
+}
+
+body .modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 1000;
+  visibility: visible;
+}
+
+body .modal .modal-contenedor {
+  width: 80%;
+  max-width: 1000px;
+  max-height: 80%;
+  background-color: white;
+  margin: auto;
+  border-radius: 10px;
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  gap: 20px;
+  grid-auto-columns: 100%;
+}
+
+body .modal .modal-contenedor .modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .modal .modal-contenedor .modal-header .modal-cerrar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #a01789;
+  width: 25px;
+  height: 25px;
+  text-decoration: none;
+  color: black;
+  border-radius: 50%;
+}
+
+body .modal .modal-contenedor .modal-header .modal-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+body .modal .modal-contenedor .modal-header .modal-logo h2 {
+  margin: 0px 20px;
+}
+
+body .modal-show {
+  visibility: visible;
 }
 /*# sourceMappingURL=estilos.css.map */
