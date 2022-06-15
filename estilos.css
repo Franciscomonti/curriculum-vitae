@@ -253,6 +253,18 @@ body .bloque-piepagina .bloque-piepagina-datos li {
   padding: 5px;
 }
 
+body .modal-html {
+  visibility: hidden;
+}
+
+body .modal-css {
+  visibility: hidden;
+}
+
+body .modal-js {
+  visibility: hidden;
+}
+
 body .modal {
   position: fixed;
   top: 0;
@@ -260,18 +272,21 @@ body .modal {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.45);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   z-index: 1000;
-  visibility: visible;
 }
 
 body .modal .modal-contenedor {
   width: 80%;
-  max-width: 1000px;
+  max-width: 600px;
   max-height: 80%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   margin: auto;
   border-radius: 10px;
   padding: 20px;
@@ -306,6 +321,7 @@ body .modal .modal-contenedor .modal-header .modal-cerrar {
   text-decoration: none;
   color: black;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 body .modal .modal-contenedor .modal-header .modal-logo {
@@ -318,11 +334,20 @@ body .modal .modal-contenedor .modal-header .modal-logo {
   width: 100%;
 }
 
-body .modal .modal-contenedor .modal-header .modal-logo h2 {
-  margin: 0px 20px;
+body .modal .modal-contenedor .modal-header .modal-logo img {
+  width: 150px;
 }
 
-body .modal-show {
-  visibility: visible;
+body .modal .modal-contenedor .modal-header .modal-logo h2 {
+  margin: 0px 20px;
+  font-size: 40px;
+}
+
+body .modal .modal-contenedor .modal-descripcion {
+  margin: 10px 50px;
+}
+
+body .modal .modal-contenedor .modal-descripcion li {
+  font-size: 20px;
 }
 /*# sourceMappingURL=estilos.css.map */

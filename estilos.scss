@@ -205,6 +205,17 @@ body{
         }
     }
 
+    .modal-html{
+        visibility: hidden;
+    }
+
+    .modal-css{
+        visibility: hidden;
+    }
+
+    .modal-js{
+        visibility: hidden;
+    }
 
     .modal{
         position: fixed;
@@ -213,22 +224,23 @@ body{
         right: 0;
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.450);
+        backdrop-filter: blur(10px);
         display: flex;
         z-index: 1000;
-        visibility: visible;
+        
 
         .modal-contenedor{
             width: 80%;
-            max-width: 1000px;
+            max-width: 600px;
             max-height: 80%;
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.600);
+            backdrop-filter: blur(10px);
             margin: auto;
             border-radius: 10px;
             padding: 20px;
             display: grid;
             gap: 20px;
             grid-auto-columns: 100%;
-
 
             .modal-header{
                 display: flex;
@@ -243,16 +255,30 @@ body{
                     text-decoration: none;
                     color: black;
                     border-radius: 50%;
+                    cursor:pointer;
                 }
+                
 
                 .modal-logo{
                     display: flex;
                     align-items: center;
                     width: 100%;
+
+                    img{
+                        width: 150px;
+                    }
                     
                     h2{
                         margin:0px 20px ;
+                        font-size: 40px;
                     }
+                }
+            }
+
+            .modal-descripcion{
+                margin: 10px 50px;
+                li{
+                    font-size: 20px;
                 }
             }
         }
@@ -260,15 +286,6 @@ body{
         
 
     }
-
-    .modal-show{
-        visibility: visible;
-
-    }
-
-
-
-
 
 }
 
