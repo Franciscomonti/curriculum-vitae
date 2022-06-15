@@ -253,30 +253,6 @@ body .bloque-piepagina .bloque-piepagina-datos li {
   padding: 5px;
 }
 
-body .modal-html {
-  visibility: hidden;
-}
-
-body .modal-css {
-  visibility: hidden;
-}
-
-body .modal-js {
-  visibility: hidden;
-}
-
-body .modal-sass {
-  visibility: hidden;
-}
-
-body .modal-git {
-  visibility: hidden;
-}
-
-body .modal-figma {
-  visibility: hidden;
-}
-
 body .modal {
   position: fixed;
   top: 0;
@@ -361,5 +337,29 @@ body .modal .modal-contenedor .modal-descripcion {
 
 body .modal .modal-contenedor .modal-descripcion li {
   font-size: 20px;
+}
+
+body .modal-html {
+  visibility: hidden;
+}
+
+body .modal-css {
+  visibility: hidden;
+}
+
+body .modal-js {
+  visibility: hidden;
+}
+
+body .modal-sass {
+  visibility: hidden;
+}
+
+body .modal-git {
+  visibility: hidden;
+}
+
+body .modal-figma {
+  visibility: hidden;
 }
 /*# sourceMappingURL=estilos.css.map */

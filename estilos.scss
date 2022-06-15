@@ -205,31 +205,7 @@ body{
         }
     }
 
-    .modal-html{
-        visibility: hidden;
-    }
-
-    .modal-css{
-        visibility: hidden;
-    }
-
-    .modal-js{
-        visibility: hidden;
-    }
-
-    .modal-sass{
-        visibility: hidden;
-    }
-
-    
-    .modal-git{
-        visibility: hidden;
-    }
-
-    .modal-figma{
-        visibility: hidden;
-    }
-
+   
 
     .modal{
         position: fixed;
@@ -300,6 +276,34 @@ body{
         
 
     }
+
+// modales hidden or visibility propiedad
+
+    .modal-html{
+        visibility: hidden;
+    }
+
+    .modal-css{
+        visibility: hidden;
+    }
+
+    .modal-js{
+        visibility: hidden;
+    }
+
+    .modal-sass{
+        visibility: hidden;
+    }
+
+    
+    .modal-git{
+        visibility: hidden;
+    }
+
+    .modal-figma{
+        visibility: hidden;
+    }
+
 
 }
 
