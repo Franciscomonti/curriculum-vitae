@@ -42,3 +42,49 @@ abrirjs.addEventListener("click", function(e){
 cerrarjs.addEventListener("click", function(){
     modalCjs.style.visibility = "hidden";
 });
+
+// modal sass
+
+let cerrarsass = document.querySelectorAll(".modal-cerrar-sass")[0];
+let abrirsass = document.querySelectorAll(".cta-sass")[0];
+let modalCsass = document.querySelectorAll(".modal-sass")[0];
+
+abrirsass.addEventListener("click", function(e){
+    e.preventDefault();
+    modalCsass.style.visibility = "visible";
+});
+
+cerrarsass.addEventListener("click", function(){
+    modalCsass.style.visibility = "hidden";
+});
+
+// modal git
+
+let cerrargit = document.querySelectorAll(".modal-cerrar-git")[0];
+let abrirgit = document.querySelectorAll(".cta-git")[0];
+let modalCgit = document.querySelectorAll(".modal-git")[0];
+
+abrirgit.addEventListener("click", function(e){
+    e.preventDefault();
+    modalCgit.style.visibility = "visible";
+});
+
+cerrargit.addEventListener("click", function(){
+    modalCgit.style.visibility = "hidden";
+});
+
+// modal Figma
+
+let cerrarfigma = document.querySelectorAll(".modal-cerrar-figma")[0];
+let abrirfigma = document.querySelectorAll(".cta-figma")[0];
+let modalCfigma = document.querySelectorAll(".modal-figma")[0];
+
+abrirfigma.addEventListener("click", function(e){
+    e.preventDefault();
+    modalCfigma.style.visibility = "visible";
+});
+
+cerrarfigma.addEventListener("click", function(){
+    modalCfigma.style.visibility = "hidden";
+});
+

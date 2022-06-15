@@ -265,6 +265,18 @@ body .modal-js {
   visibility: hidden;
 }
 
+body .modal-sass {
+  visibility: hidden;
+}
+
+body .modal-git {
+  visibility: hidden;
+}
+
+body .modal-figma {
+  visibility: hidden;
+}
+
 body .modal {
   position: fixed;
   top: 0;
