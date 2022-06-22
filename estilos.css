@@ -6,7 +6,7 @@
 }
 
 body .fondo {
-  background-image: url(./img/fondo.png);
+  background-image: url(./img/svg.png);
   background-size: cover;
   position: fixed;
   width: 100%;
@@ -44,7 +44,7 @@ body .bloque-main .bloque-descripcion {
   padding: 50px;
   background-color: rgba(185, 185, 185, 0.411);
   color: black;
-  margin: 50px auto;
+  margin: 100px auto 50px;
   border-radius: 15px;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -76,6 +76,9 @@ body .bloque-main .bloque-descripcion .bloque-descripcion-txt h2 {
 
 body .bloque-main .bloque-descripcion .bloque-descripcion-txt p {
   font-size: 20px;
+  padding: 10px;
+  margin-right: 50px;
+  text-align: justify;
 }
 
 body .bloque-main .bloque-descripcion .bloque-descripcion-txt a {
@@ -202,11 +205,21 @@ body .bloque-main .bloque-cursos .cards-cursos {
           backdrop-filter: blur(5px);
 }
 
+body .bloque-main .bloque-cursos .cards-cursos:nth-child(n+4) {
+  -webkit-filter: grayscale(100);
+          filter: grayscale(100);
+}
+
 body .bloque-main .bloque-cursos .cards-cursos:hover {
   -webkit-box-shadow: rgba(0, 0, 0, 0.466) 2px 2px 10px;
           box-shadow: rgba(0, 0, 0, 0.466) 2px 2px 10px;
   -webkit-backdrop-filter: blur(30px);
           backdrop-filter: blur(30px);
+}
+
+body .bloque-main .bloque-cursos .cards-cursos:hover .cards-cursos-txt {
+  height: auto;
+  overflow: visible;
 }
 
 body .bloque-main .bloque-cursos .cards-cursos:first-child {
@@ -226,11 +239,6 @@ body .bloque-main .bloque-cursos .cards-cursos .cards-cursos-txt {
   height: 100px;
   overflow: hidden;
   text-align: justify;
-}
-
-body .bloque-main .bloque-cursos .cards-cursos .cards-cursos-txt:hover {
-  height: auto;
-  overflow: visible;
 }
 
 body .bloque-main .bloque-cursos .cards-cursos .cards-cursos-txt h3 {
@@ -294,21 +302,8 @@ body .modal .modal-contenedor .modal-header {
 }
 
 body .modal .modal-contenedor .modal-header .modal-cerrar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #a01789;
-  width: 25px;
-  height: 25px;
-  text-decoration: none;
-  color: black;
-  border-radius: 50%;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
 }
 

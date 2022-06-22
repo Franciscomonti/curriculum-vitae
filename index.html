@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./estilos.css">
 </head>
+
 <body>
     <div class="fondo"></div>
 
     <main class="bloque-main">
-        <div class="bloque-descripcion">
+        <div class="bloque-descripcion" data-aos="zoom-in">
             <img src="./img/b4.jpg" alt="">
             <div class="bloque-descripcion-txt">
                 <h2>Web Developer Front-End</h2>
                 <h1>Francisco Javier Monti</h1>
-                <p>Hola! Mi nombre es Francisco soy web developer Jr. aqui encontraras un poco mas acerca de mi</p>
+                <p>Hola! Mi nombre es Francisco soy web developer Jr. aqui encontraras un poco mas acerca de mi.</p>
+                <p>Actualmente me encuentro en búsqueda laboral en una empresa que me ayude a seguir profesionalizando ,
+                    con un buen ambiente laboral , en la cual pueda plasmar todos mis conocimientos y crecer junto a
+                    ella ! </p>
                 <a href="#footer">Contactame</a>
             </div>
         </div>
@@ -28,157 +34,36 @@
         </div>
 
         <div class="bloque-conocimiento">
-            <div class="cards-conocimiento " >
+            <div class="cards-conocimiento " data-aos="flip-left">
                 <img src="./img/icons8-html-5.svg" alt="">
                 <h3>Html-5</h3>
-                <a href="" class="cta-html">Ver mas</a>
+
             </div>
-            <div class="cards-conocimiento">
+            <div class="cards-conocimiento" data-aos="flip-left">
                 <img src="./img/icons8-css3.svg" alt="">
                 <h3>Css3</h3>
-                <a href="" class="cta-css" >Ver mas</a>
+
             </div>
-            <div class="cards-conocimiento">
+            <div class="cards-conocimiento" data-aos="flip-left">
                 <img src="./img/icons8-javascript.svg" alt="">
                 <h3>JavaScript</h3>
-                <a href="" class="cta-js">Ver mas</a>
+
             </div>
-            <div class="cards-conocimiento">
+            <div class="cards-conocimiento" data-aos="flip-left">
                 <img src="./img/icons8-sass-avatar.svg" alt="">
                 <h3>Sass</h3>
-                <a href="" class="cta-sass">Ver mas</a>
+
             </div>
-            <div class="cards-conocimiento">
+            <div class="cards-conocimiento" data-aos="flip-left">
                 <img src="./img/icons8-git.svg" alt="">
                 <h3>Git / GitHub</h3>
-                <a href="" class="cta-git">Ver mas</a>
+
             </div>
-            <div class="cards-conocimiento">
+            <div class="cards-conocimiento" data-aos="flip-left">
                 <img src="./img/icons8-figma.svg" alt="">
                 <h3>Figma</h3>
-                <a href="" class="cta-figma">Ver mas</a>
             </div>
         </div>
-
-        <section class="modal modal-html">
-            <div class="modal-contenedor">
-                <div class="modal-header">
-                    <div class="modal-logo">
-                        <img src="./img/icons8-html-5.svg" class="modal-img" alt="img-html">
-                        <h2 class="modal-titulo">Html-5</h2>
-                    </div>
-                    <p class="modal-cerrar">X</p>
-                </div>
-                <ul class="modal-descripcion">
-                    <li>Estructura html</li>
-                    <li>Etiquetas y Atributos</li>
-                    <li>Uso de listas, tablas y formularios</li>
-                    <li>Enlaces con links externos (iframes)</li>
-                    <li>Incorporacion de videos e imagenes</li>
-                    <li>Utilizacion de SEO</li>
-                </ul>        
-            </div>
-        </section>
-
-        <section class="modal modal-css">
-            <div class="modal-contenedor">
-                <div class="modal-header">
-                    <div class="modal-logo">
-                        <img src="./img/icons8-css3.svg" class="modal-img" alt="img-html">
-                        <h2 class="modal-titulo">Css-3</h2>
-                    </div>
-                    <p class="modal-cerrar-css modal-cerrar">X</p>
-                </div>
-                <ul class="modal-descripcion">
-                    <li>lorem impsum</li>
-                    <li>Etiquetas y Atributos</li>
-                    <li>Uso de listas, tablas y formularios</li>
-                    <li>Enlaces con links externos (iframes)</li>
-                    <li>Incorporacion de videos e imagenes</li>
-                    <li>Utilizacion de SEO</li>
-                </ul>        
-            </div>
-        </section>
-
-        <section class="modal modal-js">
-            <div class="modal-contenedor">
-                <div class="modal-header">
-                    <div class="modal-logo">
-                        <img src="./img/icons8-javascript.svg" class="modal-img" alt="img-html">
-                        <h2 class="modal-titulo">JavaScript</h2>
-                    </div>
-                    <p class="modal-cerrar-js modal-cerrar">X</p>
-                </div>
-                <ul class="modal-descripcion">
-                    <li>lorem ipsum</li>
-                    <li>Etiquetas y Atributos</li>
-                    <li>Uso de listas, tablas y formularios</li>
-                    <li>Enlaces con links externos (iframes)</li>
-                    <li>Incorporacion de videos e imagenes</li>
-                    <li>Utilizacion de SEO</li>
-                </ul>        
-            </div>
-        </section>
-
-        <section class="modal modal-sass">
-            <div class="modal-contenedor">
-                <div class="modal-header">
-                    <div class="modal-logo">
-                        <img src="./img/icons8-sass-avatar.svg" class="modal-img" alt="img-html">
-                        <h2 class="modal-titulo">Sass</h2>
-                    </div>
-                    <p class="modal-cerrar-sass modal-cerrar">X</p>
-                </div>
-                <ul class="modal-descripcion">
-                    <li>lorem ipsum</li>
-                    <li>Etiquetas y Atributos</li>
-                    <li>Uso de listas, tablas y formularios</li>
-                    <li>Enlaces con links externos (iframes)</li>
-                    <li>Incorporacion de videos e imagenes</li>
-                    <li>Utilizacion de SEO</li>
-                </ul>        
-            </div>
-        </section>
-
-        <section class="modal modal-git">
-            <div class="modal-contenedor">
-                <div class="modal-header">
-                    <div class="modal-logo">
-                        <img src="./img/icons8-git.svg" class="modal-img" alt="img-html">
-                        <h2 class="modal-titulo">Git/GitHub</h2>
-                    </div>
-                    <p class="modal-cerrar-git modal-cerrar">X</p>
-                </div>
-                <ul class="modal-descripcion">
-                    <li>lorem ipsum</li>
-                    <li>Etiquetas y Atributos</li>
-                    <li>Uso de listas, tablas y formularios</li>
-                    <li>Enlaces con links externos (iframes)</li>
-                    <li>Incorporacion de videos e imagenes</li>
-                    <li>Utilizacion de SEO</li>
-                </ul>        
-            </div>
-        </section>
-
-        <section class="modal modal-figma">
-            <div class="modal-contenedor">
-                <div class="modal-header">
-                    <div class="modal-logo">
-                        <img src="./img/icons8-figma.svg" class="modal-img" alt="img-html">
-                        <h2 class="modal-titulo">Figma</h2>
-                    </div>
-                    <p class="modal-cerrar-figma modal-cerrar">X</p>
-                </div>
-                <ul class="modal-descripcion">
-                    <li>lorem ipsum</li>
-                    <li>Etiquetas y Atributos</li>
-                    <li>Uso de listas, tablas y formularios</li>
-                    <li>Enlaces con links externos (iframes)</li>
-                    <li>Incorporacion de videos e imagenes</li>
-                    <li>Utilizacion de SEO</li>
-                </ul>        
-            </div>
-        </section>
 
         <div class="titulo-main">
             <h2>Algunos de mis cursos realizados</h2>
@@ -187,72 +72,82 @@
 
         <div class="bloque-cursos">
 
-            <div class="cards-cursos">
+            <div class="cards-cursos" data-aos="fade-right">
                 <img src="./img/icons8-w3c.svg" alt="">
                 <div class="cards-cursos-txt">
                     <h3>Desarrollo Web</h3>
-                    <p>En este curso aprenderás a crear tu sitio web partiendo del prototipo en
-                        papel. Te sumergirás en las mejores prácticas del desarrollo web,
-                        trabajando con HTML y CSS. Conocerás herramientas para optimizar al
-                        máximo tu sitio web, implementando prácticas de versionado de código
-                        con GIT, y preprocesadores como SASS. Al finalizar, sabrás cómo aplicar
-                        Bootstrap a tus proyectos, y comprenderás lo importante del SEO en tus
-                        desarrollos. Subirás tu sitio a un servidor, y aprenderás a interactuar con
-                        este servicio. También sabrás cómo presentar un presupuesto y atender 
-                        a tu cliente final.</p><br>
-                        <p>- Prototipar un sitio web.</p>
-                        <p>- Maquetar una web con HTML y CSS, siguiendo las mejores prácticas.</p>
-                        <p>- Crear animaciones con CSS.</p>
-                        <p>- Manejar SASS como preprocesador, y BEM como metodología.</p>
-                        <p>- Versionar tú código con GIT y GitHub.</p>
-                        <p>- Trabajar con Boostrap y con Material Design.</p>
-                        <p>- Aprender herramientas de SEO, y tips de seguridad.</p>
-                        <p>- Subir tu web a un servidor y configurarlo.</p>
-                        <p->- Presentar presupuestos y entablar negociación con tus clientes.</p>
-                    </p>
+                    <p>En este curso aprenderás a crear tu sitio web partiendo del prototipo en papel. Te sumergirás en
+                        las mejores prácticas del desarrollo web, trabajando con HTML y CSS. Conocerás herramientas para
+                        optimizar al máximo tu sitio web, implementando prácticas de versionado de código con GIT, y
+                        preprocesadores como SASS. Al finalizar, sabrás cómo aplicar Bootstrap a tus proyectos, y
+                        comprenderás lo importante del SEO en tus desarrollos. Subirás tu sitio a un servidor, y
+                        aprenderás a interactuar con este servicio. También sabrás cómo presentar un presupuesto y
+                        atender a tu cliente final.</p><br>
+                    <p>- Prototipar un sitio web.</p>
+                    <p>- Maquetar una web con HTML y CSS, siguiendo las mejores prácticas.</p>
+                    <p>- Crear animaciones con CSS.</p>
+                    <p>- Manejar SASS como preprocesador, y BEM como metodología.</p>
+                    <p>- Versionar tú código con GIT y GitHub.</p>
+                    <p>- Trabajar con Boostrap y con Material Design.</p>
+                    <p>- Aprender herramientas de SEO, y tips de seguridad.</p>
+                    <p>- Subir tu web a un servidor y configurarlo.</p>
+                    <p->- Presentar presupuestos y entablar negociación con tus clientes.</p>
                 </div>
             </div>
 
-            <div class="cards-cursos">
+            <div class="cards-cursos" data-aos="fade-right">
                 <img src="./img/icons8-javascript.svg" alt="">
                 <div class="cards-cursos-txt">
                     <h3>JavaScript</h3>
-                    <p>En este curso aprenderás los fundamentos del lenguaje de programación más usado en la actualidad, con el cual es posible crear aplicaciones de todo tipo. 
-                    Explorarás inicialmente herramientas propias del mismo, indagando casos prácticos de aplicación.
-                    Reconocerás la utilidad de las librerías, operadores avanzados, promises, asincronia, así como aplicar técnicas de desarrollo para apps modernas con AJAX y Fetch.
-                    Al finalizar el curso, estarás en condiciones de crear soluciones web interactivas y trasladar los conocimientos del curso a cualquier framework JavaScript.</p><br>
-                    <p>-Distinguir sintaxis y casos de aplicación de instrucciones, estructuras y métodos de JavaScript.</p>
-                    <p>-Crear paginas y/o secciones web interactivas con JavaScript.
+                    <p>En este curso aprenderás los fundamentos del lenguaje de programación más usado en la actualidad,
+                        con el cual es posible crear aplicaciones de todo tipo.
+                        Explorarás inicialmente herramientas propias del mismo, indagando casos prácticos de aplicación.
+                        Reconocerás la utilidad de las librerías, operadores avanzados, promises, asincronia, así como
+                        aplicar técnicas de desarrollo para apps modernas con AJAX y Fetch.
+                        Al finalizar el curso, estarás en condiciones de crear soluciones web interactivas y trasladar
+                        los conocimientos del curso a cualquier framework JavaScript.</p><br>
+                    <p>-Distinguir sintaxis y casos de aplicación de instrucciones, estructuras y métodos de JavaScript.
+                    </p>
+                    <p>-Crear paginas y/o secciones web interactivas con JavaScript.</p>
                     <p>-Determinar medio y formato de almacenamiento de datos generados por el usuario.</p>
                     <p>-Construir soluciones cuyo frontend se comunica con el backend usando AJAX.</p>
-                    <p>-Aplicar los conocimientos del lenguaje a otras librerías y frameworks JavaScript (React, Node, VueJS, etc)</p>
+                    <p>-Aplicar los conocimientos del lenguaje a otras librerías y frameworks JavaScript (React,Node,
+                        VueJS, etc)</p>
                     <p>-Comprender paradigmas y patrones de programación empleandos en el desarrollo web.</p>
                 </div>
             </div>
 
-            <div class="cards-cursos">
-                <img src="./img/icons8-reaccionar.svg" alt="">
-                <div class="cards-cursos-txt">
-                    <h3>React Js.</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi hic iste debitis alias, nostrum earum accusantium delectus dolores deserunt molestias? Suscipit ratione sit neque? Quisquam, iusto. Esse quas natus eos!</p>
-                </div>
-            </div>
-
-            <div class="cards-cursos">
-                <img src="./img/node js.svg" alt="">
-                <div class="cards-cursos-txt">
-                    <h3>Programacion Backend</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi hic iste debitis alias, nostrum earum accusantium delectus dolores deserunt molestias? Suscipit ratione sit neque? Quisquam, iusto. Esse quas natus eos!</p>
-                </div>
-            </div>
-
-            <div class="cards-cursos">
+            <div class="cards-cursos" data-aos="fade-right">
                 <img src="./img/icons8-figma.svg" alt="">
                 <div class="cards-cursos-txt">
                     <h3>Prototipado (Figma & Adobe XD)</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi hic iste debitis alias, nostrum earum accusantium delectus dolores deserunt molestias? Suscipit ratione sit neque? Quisquam, iusto. Esse quas natus eos!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi hic iste debitis alias, nostrum
+                        earum accusantium delectus dolores deserunt molestias? Suscipit ratione sit neque? Quisquam,
+                        iusto. Esse quas natus eos!</p>
                 </div>
             </div>
+
+            <div class="cards-cursos" data-aos="fade-right">
+                <img src="./img/icons8-reaccionar.svg" alt="">
+                <div class="cards-cursos-txt">
+                    <h3>React Js.</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi hic iste debitis alias, nostrum
+                        earum accusantium delectus dolores deserunt molestias? Suscipit ratione sit neque? Quisquam,
+                        iusto. Esse quas natus eos!</p>
+                </div>
+            </div>
+
+            <div class="cards-cursos" data-aos="fade-right">
+                <img src="./img/node js.svg" alt="">
+                <div class="cards-cursos-txt">
+                    <h3>Programacion Backend</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi hic iste debitis alias, nostrum
+                        earum accusantium delectus dolores deserunt molestias? Suscipit ratione sit neque? Quisquam,
+                        iusto. Esse quas natus eos!</p>
+                </div>
+            </div>
+
+
 
         </div>
 
@@ -260,7 +155,7 @@
 
     <footer class="bloque-piepagina" id="footer">
         <ul class="bloque-piepagina-datos">
-            
+
             <li>Telefono de contacto: (351)-5132544</li>
             <li>Correo electronico: montifranciscojavier@gmail.com</li>
             <li>Domicilio: Cordoba, cordoba , Argentina.</li>
@@ -269,6 +164,11 @@
     </footer>
 
     <script src="./js/main.js"></script>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
+
 </html>
