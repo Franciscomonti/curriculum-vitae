@@ -5,7 +5,6 @@
     scroll-behavior: smooth;
 }
 
-
 body {
     .fondo {
         background-image: url(./img/wave.svg);
@@ -16,7 +15,6 @@ body {
         z-index: -1;
     }
 
-
     .bloque-main {
         display: flex;
         flex-direction: column;
@@ -24,7 +22,7 @@ body {
         align-items: center;
 
         .bloque-descripcion {
-            width: 60%;
+            width: 70%;
             height: 400px;
             display: flex;
             justify-content: center;
@@ -36,13 +34,12 @@ body {
             border-radius: 15px;
             backdrop-filter: blur(5px);
 
-
             img {
                 width: 200px;
                 height: 200px;
                 object-fit: cover;
                 border-radius: 50%;
-                margin: auto;
+                margin: 50px;
                 box-shadow: 2px 2px 10px black;
             }
 
@@ -52,17 +49,17 @@ body {
                 h1 {
                     font-size: 40px;
                     margin: 0px 0px 20px 0px;
-
+                    
                 }
 
                 h2 {
                     font-size: 30px;
-
+                    
                 }
 
                 p {
                     font-size: 20px;
-                    padding: 10px;
+                    padding: 10px 0px;
                     margin-right: 50px;
                     text-align: justify;
                 }
@@ -72,10 +69,16 @@ body {
                     bottom: 50px;
                     right: 50PX;
                     font-size: 20px;
-                    font-weight: bolder;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: black;
+                    padding: 5px 7px;
+                    margin-right: 20px;
+                    &:hover{
+                    color: rgb(182, 28, 169);
+                    }
                 }
             }
-
         }
 
         .titulo-main {
@@ -91,8 +94,6 @@ body {
             margin: 50px auto;
             justify-content: space-between;
             flex-wrap: wrap;
-
-
 
             .cards-conocimiento {
                 background-color: rgba(185, 185, 185, 0.411);
@@ -126,7 +127,6 @@ body {
                     object-fit: cover;
                     margin: 10px;
                     filter: blur(1px) grayscale(90%);
-
                 }
 
                 h3 {
@@ -141,10 +141,7 @@ body {
                     background-color: rgba(93, 34, 105, 0.548);
                     border-radius: 7px;
                 }
-
-
             }
-
         }
 
         .bloque-cursos {
@@ -198,14 +195,10 @@ body {
                         margin-bottom: 10px;
                     }
                 }
-
-
             }
         }
 
     }
-
-
 
     .piepagina {
         padding: 50px 0px;
@@ -222,16 +215,14 @@ body {
             justify-content: space-between;
             margin: auto;
 
-
             .bloque-piepagina-datos {
                 width: 50%;
-
 
                 li {
                     list-style: none;
                     padding: 5px;
+                    font-weight: 500;
                 }
-
             }
 
             .bloque-piepagina-red {
@@ -248,13 +239,7 @@ body {
                     }
                 }
 
-
             }
         }
-
     }
-
-
-
-
 }

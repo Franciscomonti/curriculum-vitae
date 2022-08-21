@@ -31,7 +31,7 @@ body .bloque-main {
 }
 
 body .bloque-main .bloque-descripcion {
-  width: 60%;
+  width: 70%;
   height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,7 +57,7 @@ body .bloque-main .bloque-descripcion img {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
-  margin: auto;
+  margin: 50px;
   -webkit-box-shadow: 2px 2px 10px black;
           box-shadow: 2px 2px 10px black;
 }
@@ -77,7 +77,7 @@ body .bloque-main .bloque-descripcion .bloque-descripcion-txt h2 {
 
 body .bloque-main .bloque-descripcion .bloque-descripcion-txt p {
   font-size: 20px;
-  padding: 10px;
+  padding: 10px 0px;
   margin-right: 50px;
   text-align: justify;
 }
@@ -87,7 +87,15 @@ body .bloque-main .bloque-descripcion .bloque-descripcion-txt a {
   bottom: 50px;
   right: 50PX;
   font-size: 20px;
-  font-weight: bolder;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+  padding: 5px 7px;
+  margin-right: 20px;
+}
+
+body .bloque-main .bloque-descripcion .bloque-descripcion-txt a:hover {
+  color: #b61ca9;
 }
 
 body .bloque-main .titulo-main {
@@ -271,6 +279,7 @@ body .piepagina .bloque-piepagina .bloque-piepagina-datos {
 body .piepagina .bloque-piepagina .bloque-piepagina-datos li {
   list-style: none;
   padding: 5px;
+  font-weight: 500;
 }
 
 body .piepagina .bloque-piepagina .bloque-piepagina-red {
