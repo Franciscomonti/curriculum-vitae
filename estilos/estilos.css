@@ -6,7 +6,7 @@
 }
 
 body .fondo {
-  background-image: url(./img/wave.svg);
+  background-image: url(../img/wave.svg);
   background-size: cover;
   position: fixed;
   width: 100%;
@@ -93,7 +93,6 @@ body .bloque-main .bloque-descripcion .bloque-descripcion-txt a {
   color: black;
   padding: 5px 7px;
   margin-right: 20px;
-  color: yellow;
 }
 
 body .bloque-main .bloque-descripcion .bloque-descripcion-txt a:hover {
